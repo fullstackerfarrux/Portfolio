@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/sass/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <h1>
+          Здравствуйте, я <span class="name">Фаррух Орзиев</span>. Я
+          Frontend-разработчик.
+        </h1>
+        <a href="#about"
+          ><button class="projects">
+            Посмотреть мои работы
+            <i class="fa-solid fa-arrow-right"></i></button
+        ></a>
+      </div>
+    </div>
+    <div class="fix">
+      <div class="container">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div id="about">
+        <h2>About</h2>
+        <div class="bottom"></div>
+        <div class="box">
+          <div class="fast">
+            <div id="pentagon">
+              <i class="fa-solid fa-gauge-simple-high"></i>
+            </div>
+            <h3>Быстрый</h3>
+            <p>
+              Быстрое время загрузки и взаимодействие без задержек, мой главный
+              приоритет.
+            </p>
+          </div>
+          <div class="responsive">
+            <div id="pentagon">
+              <img
+                src="http://cdn.onlinewebfonts.com/svg/img_21192.svg"
+                alt=""
+              />
+            </div>
+            <h3>Отзывчивый</h3>
+            <p>
+              Мои сайты будут работать на любом устройстве, большом или
+              маленьком.
+            </p>
+          </div>
+          <div class="dynamic">
+            <div id="pentagon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Динамический</h3>
+            <p>
+              Веб-сайты не должны быть статичными, мне нравится оживлять
+              страницы.
+            </p>
+          </div>
+        </div>
+        <div class="about-me">
+          <div class="portion">
+            <div id="pentagon"></div>
+            <h2 class="answer">Кто этот парень?</h2>
+            <p class="about-me-text">
+              Я фронтенд-разработчик в Ташкенте, Узбекистан. У меня есть
+              серьезная страсть к эффектам анимации и созданию интуитивно
+              понятного, динамичного пользовательского интерфейса.
+              <a href="#contact">Давайте сделаем что-то особенное.</a>
+            </p>
+          </div>
+          <div class="portion">
+            <div class="flex">
+              <div class="html"><p>HTML</p></div>
+              <div class="html2"></div>
+            </div>
+            <div class="flex">
+              <div class="css"><p>CSS</p></div>
+              <div class="css2"></div>
+            </div>
+            <div class="flex">
+              <div class="javascript"><p>JavaScript</p></div>
+              <div class="javascript2"></div>
+            </div>
+            <div class="flex">
+              <div class="bootstrap"><p>Bootstrap</p></div>
+              <div class="bootstrap2"></div>
+            </div>
+            <div class="flex">
+              <div class="tailwind"><p>Tailwind</p></div>
+              <div class="tailwind2"></div>
+            </div>
+            <div class="flex">
+              <div class="react"><p>React</p></div>
+              <div class="react2"></div>
+            </div>
+            <div class="flex">
+              <div class="jquery"><p>jQuery</p></div>
+              <div class="jquery2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="project">
+      <div class="container">
+        <h2>ПРОЕКТЫ</h2>
+        <div class="bottom"></div>
+        <div class="grid"></div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <h2>КОНТАКТ</h2>
+        <div class="bottom"></div>
+        <p>Есть вопрос или хотите работать вместе?</p>
+        <form action="mailto:orziyevfarrux01@gmail.com">
+          <input type="text" placeholder="Имя" name="name" required />
+          <input
+            type="email"
+            placeholder="Введите адрес электронной почты"
+            name="email"
+            required
+          />
+          <textarea
+            placeholder="Ваше сообщение"
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" class="submit" />
+        </form>
+      </div>
+    </div>
+    <footer>
+      <a href="#" class="box"><i class="fa-solid fa-angles-up"></i></a>
+      <div class="flex">
+        <a href="https://web.telegram.org/z/" target="_blank" class="tg"
+          ><i class="fa-brands fa-telegram"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/_orziyevfarrux_/"
+          target="_blank"
+          class="insta"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+      <div class="flex">
+        <p>Фаррух Орзиев</p>
+        <p class="year">©2022</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

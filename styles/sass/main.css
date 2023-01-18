@@ -1,0 +1,1951 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.page {
+  background-color: #252934;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page h1 {
+  width: 540px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+.page h1 span {
+  color: #e21a6d;
+}
+.page .projects {
+  padding: 13px 20px;
+  background-color: inherit;
+  color: white;
+  border: 2px solid white;
+  font-size: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  transition: all 0.3s ease-in;
+}
+.page .projects:hover {
+  background-color: #06c2c9;
+  border: 2px solid #06c2c9;
+}
+.page .projects:hover i {
+  transform: rotateZ(90deg);
+}
+.page .projects i {
+  margin-left: 15px;
+  margin-top: 3px;
+  transition: all 0.5s ease;
+}
+
+.fix {
+  width: 100vw;
+  height: 50px;
+  background-color: #1b242f;
+  border-bottom: 3px solid #06c2c9;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+.fix ul {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  height: 50px;
+  color: white;
+}
+.fix ul li {
+  margin-left: 50px;
+  transition: all 0.3s ease;
+}
+.fix ul li:hover {
+  color: #e21a6d;
+}
+.fix .fa-bars {
+  display: none;
+}
+.fix .dropdown {
+  width: 100vw;
+  height: 200px;
+  position: absolute;
+  background-color: #333;
+  left: 0;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.fix .dropdown i {
+  position: absolute;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+}
+.fix .dropdown a {
+  color: #eee;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+#about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#about h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #44474a;
+}
+#about .bottom {
+  height: 5px;
+  width: 100px;
+  background-color: #44474a;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+#about .box {
+  display: flex;
+  justify-content: space-evenly;
+}
+#about .box #pentagon {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: #06c2c9 transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 130px;
+  margin-left: 77px;
+  transform: scale(1.5);
+}
+#about .box #pentagon:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent #06c2c9;
+}
+#about .box #pentagon i {
+  position: absolute;
+  bottom: 15px;
+  font-size: 40px;
+}
+#about .box #pentagon img {
+  position: absolute;
+  bottom: 7px;
+  width: 50px;
+  height: 50px;
+}
+#about .box .fast h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#about .box .fast p {
+  width: 250px;
+  text-align: center;
+  color: grey;
+}
+#about .box .responsive h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+#about .box .responsive p {
+  width: 250px;
+  text-align: center;
+  color: grey;
+}
+#about .box .dynamic h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+#about .box .dynamic p {
+  width: 250px;
+  text-align: center;
+  color: grey;
+}
+#about .about-me {
+  display: flex;
+}
+#about .about-me .portion #pentagon {
+  width: 300px; /* update the width */
+  aspect-ratio: 1;
+  background-image: url(../../images/faarruxsphoto.jpg);
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  margin-left: 300px;
+  margin-top: 50px;
+  -webkit-clip-path: polygon(96.19% 69.13%, 69.13% 96.19%, 30.87% 96.19%, 3.81% 69.13%, 3.81% 30.87%, 30.87% 3.81%, 69.13% 3.81%, 96.19% 30.87%);
+          clip-path: polygon(96.19% 69.13%, 69.13% 96.19%, 30.87% 96.19%, 3.81% 69.13%, 3.81% 30.87%, 30.87% 3.81%, 69.13% 3.81%, 96.19% 30.87%);
+}
+#about .about-me .portion .answer {
+  font-size: 25px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+#about .about-me .portion .about-me-text {
+  width: 503px;
+  text-align: center;
+  margin-left: 200px;
+}
+#about .about-me .portion .about-me-text a {
+  color: #06c2c9;
+}
+#about .about-me .portion .html {
+  width: 120px;
+  height: 25px;
+  background-color: #06c2c9;
+  color: white;
+  margin-top: 100px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about-me .portion .html2 {
+  width: 350px;
+  height: 25px;
+  background-color: #04a1a6;
+  margin-top: 100px;
+}
+#about .about-me .portion .css {
+  width: 120px;
+  height: 25px;
+  background-color: #06c2c9;
+  color: white;
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about-me .portion .css2 {
+  width: 350px;
+  height: 25px;
+  background-color: #04a1a6;
+  margin-top: 20px;
+}
+#about .about-me .portion .javascript {
+  width: 120px;
+  height: 25px;
+  background-color: #06c2c9;
+  color: white;
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about-me .portion .javascript2 {
+  width: 350px;
+  height: 25px;
+  background-color: #04a1a6;
+  margin-top: 20px;
+}
+#about .about-me .portion .bootstrap {
+  width: 120px;
+  height: 25px;
+  background-color: #06c2c9;
+  color: white;
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about-me .portion .bootstrap2 {
+  width: 350px;
+  height: 25px;
+  background-color: #04a1a6;
+  margin-top: 20px;
+}
+#about .about-me .portion .tailwind {
+  width: 120px;
+  height: 25px;
+  background-color: #06c2c9;
+  color: white;
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about-me .portion .tailwind2 {
+  width: 350px;
+  height: 25px;
+  background-color: #04a1a6;
+  margin-top: 20px;
+}
+#about .about-me .portion .react {
+  width: 120px;
+  height: 25px;
+  background-color: #06c2c9;
+  color: white;
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about-me .portion .react2 {
+  width: 250px;
+  height: 25px;
+  background-color: #04a1a6;
+  margin-top: 20px;
+}
+#about .about-me .portion .jquery {
+  width: 120px;
+  height: 25px;
+  background-color: #06c2c9;
+  color: white;
+  margin-top: 20px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about-me .portion .jquery2 {
+  width: 150px;
+  height: 25px;
+  background-color: #04a1a6;
+  margin-top: 20px;
+}
+
+#project {
+  background-color: #f5f5f5;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#project h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #44474a;
+}
+#project .bottom {
+  height: 5px;
+  width: 100px;
+  background-color: #44474a;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+#project .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px;
+  transition: all 1s ease-in;
+}
+#project .grid .box {
+  image-orientation: flip;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#project .grid .box:hover {
+  background-color: white;
+}
+#project .grid .box:hover img {
+  position: absolute;
+  transform: translateY(400px);
+  transition: all 0.3s ease;
+}
+#project .grid .box:hover h2 {
+  display: block;
+}
+#project .grid .box h2 {
+  margin-bottom: 10px;
+}
+#project .grid .box button {
+  padding: 10px 20px;
+  border: none;
+  background-color: red;
+  color: white;
+}
+#project .grid .box button:hover {
+  background-color: grey;
+}
+
+#contact {
+  background-color: #252934;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+}
+#contact h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+#contact .bottom {
+  height: 5px;
+  width: 100px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+#contact p {
+  color: #04a1a6;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contact form input {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #1b242f;
+  border: none;
+  margin-bottom: 5px;
+  color: white;
+}
+#contact form textarea {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #1b242f;
+  border: none;
+  color: white;
+}
+#contact form .submit {
+  margin-top: 10px;
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+  width: 200px;
+}
+#contact form .submit:hover {
+  background-color: #06c2c9;
+  border-color: #06c2c9;
+}
+
+footer {
+  background-color: #1b242f;
+  padding: 50px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .box {
+  background-color: #e21a6d;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -70px;
+}
+footer .tg {
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  color: white;
+  background-color: #252934;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+footer .insta {
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  color: white;
+  background-color: #252934;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+footer p {
+  color: #44474a;
+  font-size: 18px;
+  margin-left: 10px;
+}
+footer .year {
+  color: #942455;
+}
+
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+  .page {
+    background-color: #252934;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page h1 {
+    width: 540px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+  }
+  .page h1 span {
+    color: #e21a6d;
+  }
+  .page .projects {
+    padding: 13px 20px;
+    background-color: inherit;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: all 0.3s ease-in;
+  }
+  .page .projects:hover {
+    background-color: #06c2c9;
+    border: 2px solid #06c2c9;
+  }
+  .page .projects:hover i {
+    transform: rotateZ(90deg);
+  }
+  .page .projects i {
+    margin-left: 15px;
+    margin-top: 3px;
+    transition: all 0.5s ease;
+  }
+  .fix {
+    width: 100vw;
+    height: 50px;
+    background-color: #1b242f;
+    border-bottom: 3px solid #06c2c9;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  .fix ul {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    height: 50px;
+    color: white;
+  }
+  .fix ul li {
+    margin-left: 50px;
+    transition: all 0.3s ease;
+  }
+  .fix ul li:hover {
+    color: #e21a6d;
+  }
+  #about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #about h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #44474a;
+  }
+  #about .bottom {
+    height: 5px;
+    width: 100px;
+    background-color: #44474a;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  #about .box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #about .box #pentagon {
+    position: relative;
+    width: 54px;
+    box-sizing: content-box;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #06c2c9 transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 130px;
+    margin-left: 77px;
+    transform: scale(1.5);
+  }
+  #about .box #pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -84px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #06c2c9;
+  }
+  #about .box #pentagon i {
+    position: absolute;
+    bottom: 15px;
+    font-size: 40px;
+  }
+  #about .box #pentagon img {
+    position: absolute;
+    bottom: 7px;
+    width: 50px;
+    height: 50px;
+  }
+  #about .box .fast h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #about .box .fast p {
+    width: 250px;
+    text-align: center;
+    color: grey;
+  }
+  #about .box .responsive h3 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #about .box .responsive p {
+    width: 250px;
+    text-align: center;
+    color: grey;
+  }
+  #about .box .dynamic h3 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #about .box .dynamic p {
+    width: 250px;
+    text-align: center;
+    color: grey;
+  }
+  #about .about-me {
+    display: flex;
+  }
+  #about .about-me .portion #pentagon {
+    width: 300px; /* update the width */
+    aspect-ratio: 1;
+    background-image: url(../../images/faarruxsphoto.jpg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    margin-left: 150px;
+    margin-top: 50px;
+    -webkit-clip-path: polygon(96.19% 69.13%, 69.13% 96.19%, 30.87% 96.19%, 3.81% 69.13%, 3.81% 30.87%, 30.87% 3.81%, 69.13% 3.81%, 96.19% 30.87%);
+            clip-path: polygon(96.19% 69.13%, 69.13% 96.19%, 30.87% 96.19%, 3.81% 69.13%, 3.81% 30.87%, 30.87% 3.81%, 69.13% 3.81%, 96.19% 30.87%);
+  }
+  #about .about-me .portion .answer {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  #about .about-me .portion .about-me-text {
+    width: 503px;
+    text-align: center;
+    margin-left: 50px;
+  }
+  #about .about-me .portion .about-me-text a {
+    color: #06c2c9;
+  }
+  #about .about-me .portion .html {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .html2 {
+    width: 350px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 100px;
+  }
+  #about .about-me .portion .css {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .css2 {
+    width: 350px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .javascript {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .javascript2 {
+    width: 350px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .bootstrap {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .bootstrap2 {
+    width: 350px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .tailwind {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .tailwind2 {
+    width: 350px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .react {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .react2 {
+    width: 250px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .jquery {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .jquery2 {
+    width: 150px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #project {
+    background-color: #f5f5f5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #project h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #44474a;
+  }
+  #project .bottom {
+    height: 5px;
+    width: 100px;
+    background-color: #44474a;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+  #project .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+    transition: all 1s ease-in;
+  }
+  #project .grid .box {
+    image-orientation: flip;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #project .grid .box:hover {
+    background-color: white;
+  }
+  #project .grid .box:hover img {
+    position: absolute;
+    transform: translateY(400px);
+    transition: all 0.3s ease;
+  }
+  #project .grid .box:hover h2 {
+    display: block;
+  }
+  #project .grid .box h2 {
+    margin-bottom: 10px;
+  }
+  #project .grid .box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+  }
+  #project .grid .box button:hover {
+    background-color: grey;
+  }
+  #contact {
+    background-color: #252934;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+  }
+  #contact h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  #contact .bottom {
+    height: 5px;
+    width: 100px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+  #contact p {
+    color: #04a1a6;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #contact form input {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #1b242f;
+    border: none;
+    margin-bottom: 5px;
+    color: white;
+  }
+  #contact form textarea {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #1b242f;
+    border: none;
+    color: white;
+  }
+  #contact form .submit {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    width: 200px;
+  }
+  #contact form .submit:hover {
+    background-color: #06c2c9;
+    border-color: #06c2c9;
+  }
+  footer {
+    background-color: #1b242f;
+    padding: 50px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .box {
+    background-color: #e21a6d;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -70px;
+  }
+  footer .tg {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    color: white;
+    background-color: #252934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+  }
+  footer .insta {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    color: white;
+    background-color: #252934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  footer p {
+    color: #44474a;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  footer .year {
+    color: #942455;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    max-width: 748px;
+    margin: 0 auto;
+  }
+  .page {
+    background-color: #252934;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page h1 {
+    width: 540px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+  }
+  .page h1 span {
+    color: #e21a6d;
+  }
+  .page .projects {
+    padding: 13px 20px;
+    background-color: inherit;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: all 0.3s ease-in;
+  }
+  .page .projects:hover {
+    background-color: #06c2c9;
+    border: 2px solid #06c2c9;
+  }
+  .page .projects:hover i {
+    transform: rotateZ(90deg);
+  }
+  .page .projects i {
+    margin-left: 15px;
+    margin-top: 3px;
+    transition: all 0.5s ease;
+  }
+  .fix {
+    width: 100vw;
+    height: 50px;
+    background-color: #1b242f;
+    border-bottom: 3px solid #06c2c9;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  .fix ul {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    height: 50px;
+    color: white;
+  }
+  .fix ul li {
+    margin-left: 50px;
+    transition: all 0.3s ease;
+  }
+  .fix ul li:hover {
+    color: #e21a6d;
+  }
+  #about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #about h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #44474a;
+  }
+  #about .bottom {
+    height: 5px;
+    width: 50px;
+    background-color: #44474a;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  #about .box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #about .box #pentagon {
+    position: relative;
+    width: 54px;
+    box-sizing: content-box;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #06c2c9 transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 130px;
+    margin-left: 77px;
+    transform: scale(1.3);
+  }
+  #about .box #pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -84.5px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #06c2c9;
+  }
+  #about .box #pentagon i {
+    position: absolute;
+    bottom: 15px;
+    font-size: 40px;
+  }
+  #about .box #pentagon img {
+    position: absolute;
+    bottom: 7px;
+    width: 50px;
+    height: 50px;
+  }
+  #about .box .fast h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  #about .box .fast p {
+    width: 250px;
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+  }
+  #about .box .responsive h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+  #about .box .responsive p {
+    width: 250px;
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+  }
+  #about .box .dynamic h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+  #about .box .dynamic p {
+    width: 250px;
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+  }
+  #about .about-me {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #about .about-me .portion #pentagon {
+    width: 300px; /* update the width */
+    aspect-ratio: 1;
+    background-image: url(../../images/faarruxsphoto.jpg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    margin-left: 150px;
+    margin-top: 50px;
+    -webkit-clip-path: polygon(96.19% 69.13%, 69.13% 96.19%, 30.87% 96.19%, 3.81% 69.13%, 3.81% 30.87%, 30.87% 3.81%, 69.13% 3.81%, 96.19% 30.87%);
+            clip-path: polygon(96.19% 69.13%, 69.13% 96.19%, 30.87% 96.19%, 3.81% 69.13%, 3.81% 30.87%, 30.87% 3.81%, 69.13% 3.81%, 96.19% 30.87%);
+  }
+  #about .about-me .portion .answer {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  #about .about-me .portion .about-me-text {
+    width: 565px;
+    text-align: center;
+    margin-left: 30px;
+    font-size: 18px;
+  }
+  #about .about-me .portion .about-me-text a {
+    color: #06c2c9;
+  }
+  #about .about-me .portion .html {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 100px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .html2 {
+    width: 500px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 100px;
+  }
+  #about .about-me .portion .css {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .css2 {
+    width: 500px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .javascript {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .javascript2 {
+    width: 500px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .bootstrap {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .bootstrap2 {
+    width: 500px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .tailwind {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .tailwind2 {
+    width: 500px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .react {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .react2 {
+    width: 400px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .jquery {
+    width: 120px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .jquery2 {
+    width: 200px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #project {
+    background-color: #f5f5f5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #project h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #44474a;
+  }
+  #project .bottom {
+    height: 5px;
+    width: 80px;
+    background-color: #44474a;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+  #project .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px;
+    transition: all 1s ease-in;
+  }
+  #project .grid .box {
+    image-orientation: flip;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #project .grid .box:hover {
+    background-color: white;
+  }
+  #project .grid .box:hover img {
+    position: absolute;
+    transform: translateY(400px);
+    transition: all 0.3s ease;
+  }
+  #project .grid .box:hover h2 {
+    display: block;
+  }
+  #project .grid .box h2 {
+    margin-bottom: 10px;
+  }
+  #project .grid .box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+  }
+  #project .grid .box button:hover {
+    background-color: grey;
+  }
+  #contact {
+    background-color: #252934;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+  }
+  #contact h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  #contact .bottom {
+    height: 5px;
+    width: 80px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+  #contact p {
+    color: #04a1a6;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact form input {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #1b242f;
+    border: none;
+    margin-bottom: 5px;
+    color: white;
+  }
+  #contact form textarea {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #1b242f;
+    border: none;
+    color: white;
+  }
+  #contact form .submit {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    width: 200px;
+  }
+  #contact form .submit:hover {
+    background-color: #06c2c9;
+    border-color: #06c2c9;
+  }
+  footer {
+    background-color: #1b242f;
+    padding: 50px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .box {
+    background-color: #e21a6d;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -70px;
+  }
+  footer .tg {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    color: white;
+    background-color: #252934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+  }
+  footer .insta {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    color: white;
+    background-color: #252934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  footer p {
+    color: #44474a;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  footer .year {
+    color: #942455;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 355px;
+    margin: 0 auto;
+  }
+  .page {
+    background-color: #252934;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page h1 {
+    width: 340px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+  }
+  .page h1 span {
+    color: #e21a6d;
+  }
+  .page .projects {
+    padding: 13px 20px;
+    background-color: inherit;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: all 0.3s ease-in;
+  }
+  .page .projects:hover {
+    background-color: #06c2c9;
+    border: 2px solid #06c2c9;
+  }
+  .page .projects:hover i {
+    transform: rotateZ(90deg);
+  }
+  .page .projects i {
+    margin-left: 15px;
+    margin-top: 3px;
+    transition: all 0.5s ease;
+  }
+  .fix {
+    width: 100vw;
+    height: 50px;
+    background-color: #1b242f;
+    border-bottom: 3px solid #06c2c9;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+  }
+  .fix ul {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    height: 50px;
+    color: white;
+    display: none;
+  }
+  .fix ul li {
+    margin-left: 50px;
+    transition: all 0.3s ease;
+  }
+  .fix ul li:hover {
+    color: #e21a6d;
+  }
+  .fix .fa-bars {
+    display: block;
+    font-size: 30px;
+    color: white;
+  }
+  #about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #about h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #44474a;
+  }
+  #about .bottom {
+    height: 5px;
+    width: 70px;
+    background-color: #44474a;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  #about .box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #about .box #pentagon {
+    position: relative;
+    width: 54px;
+    box-sizing: content-box;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #06c2c9 transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 130px;
+    margin-left: 77px;
+    transform: scale(1.5);
+  }
+  #about .box #pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -84.5px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #06c2c9;
+  }
+  #about .box #pentagon i {
+    position: absolute;
+    bottom: 15px;
+    font-size: 40px;
+  }
+  #about .box #pentagon img {
+    position: absolute;
+    bottom: 7px;
+    width: 50px;
+    height: 50px;
+  }
+  #about .box .fast h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #about .box .fast p {
+    width: 250px;
+    text-align: center;
+    color: grey;
+  }
+  #about .box .responsive h3 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #about .box .responsive p {
+    width: 250px;
+    text-align: center;
+    color: grey;
+  }
+  #about .box .dynamic h3 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #about .box .dynamic p {
+    width: 250px;
+    text-align: center;
+    color: grey;
+  }
+  #about .about-me {
+    display: flex;
+  }
+  #about .about-me .portion #pentagon {
+    width: 300px; /* update the width */
+    aspect-ratio: 1;
+    background-image: url(../../images/faarruxsphoto.jpg);
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    margin-top: 50px;
+    -webkit-clip-path: polygon(96.19% 69.13%, 69.13% 96.19%, 30.87% 96.19%, 3.81% 69.13%, 3.81% 30.87%, 30.87% 3.81%, 69.13% 3.81%, 96.19% 30.87%);
+            clip-path: polygon(96.19% 69.13%, 69.13% 96.19%, 30.87% 96.19%, 3.81% 69.13%, 3.81% 30.87%, 30.87% 3.81%, 69.13% 3.81%, 96.19% 30.87%);
+  }
+  #about .about-me .portion .answer {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  #about .about-me .portion .about-me-text {
+    width: 350px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  #about .about-me .portion .about-me-text a {
+    color: #06c2c9;
+  }
+  #about .about-me .portion .html {
+    width: 80px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 100px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .html2 {
+    width: 250px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 100px;
+  }
+  #about .about-me .portion .css {
+    width: 80px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .css2 {
+    width: 250px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .javascript {
+    width: 100px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .javascript2 {
+    width: 230px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .bootstrap {
+    width: 100px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .bootstrap2 {
+    width: 230px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .tailwind {
+    width: 100px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .tailwind2 {
+    width: 230px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .react {
+    width: 80px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .react2 {
+    width: 150px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #about .about-me .portion .jquery {
+    width: 80px;
+    height: 25px;
+    background-color: #06c2c9;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-me .portion .jquery2 {
+    width: 50px;
+    height: 25px;
+    background-color: #04a1a6;
+    margin-top: 20px;
+  }
+  #project {
+    background-color: #f5f5f5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  #project h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #44474a;
+  }
+  #project .bottom {
+    height: 5px;
+    width: 80px;
+    background-color: #44474a;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+  #project .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px;
+    transition: all 1s ease-in;
+  }
+  #project .grid .box {
+    image-orientation: flip;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #project .grid .box:hover {
+    background-color: white;
+  }
+  #project .grid .box:hover img {
+    position: absolute;
+    transform: translateY(400px);
+    transition: all 0.3s ease;
+  }
+  #project .grid .box:hover h2 {
+    display: block;
+  }
+  #project .grid .box h2 {
+    margin-bottom: 10px;
+  }
+  #project .grid .box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+  }
+  #project .grid .box button:hover {
+    background-color: grey;
+  }
+  #contact {
+    background-color: #252934;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+  }
+  #contact h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  #contact .bottom {
+    height: 5px;
+    width: 80px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+  #contact p {
+    color: #04a1a6;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #contact form input {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: #1b242f;
+    border: none;
+    margin-bottom: 5px;
+    color: white;
+  }
+  #contact form textarea {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #1b242f;
+    border: none;
+    color: white;
+  }
+  #contact form .submit {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    width: 200px;
+  }
+  #contact form .submit:hover {
+    background-color: #06c2c9;
+    border-color: #06c2c9;
+  }
+  footer {
+    background-color: #1b242f;
+    padding: 50px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .box {
+    background-color: #e21a6d;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -70px;
+  }
+  footer .tg {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    color: white;
+    background-color: #252934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+  }
+  footer .insta {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    color: white;
+    background-color: #252934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  footer p {
+    color: #44474a;
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  footer .year {
+    color: #942455;
+  }
+}
